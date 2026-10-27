@@ -83,7 +83,7 @@ export const AILegalBotPage: React.FC = () => {
     ]);
   }, [language]);
 
-  // Scroll to the LEGAL TOPIC card of the latest bot response
+  // Scroll to the LEGAL TOPIC card or the not-found section of the latest bot response
   useEffect(() => {
     if (messages.length === 0) return;
     const lastMsg = messages[messages.length - 1];
@@ -95,7 +95,10 @@ export const AILegalBotPage: React.FC = () => {
     // Wait for DOM to render the new message
     requestAnimationFrame(() => {
       setTimeout(() => {
-        const el = document.getElementById(`legal-topic-${lastMsg.id}`);
+        // Try LEGAL TOPIC first (verified result), then fall back to not-found section
+        const el =
+          document.getElementById(`legal-topic-${lastMsg.id}`) ||
+          document.getElementById(`not-found-${lastMsg.id}`);
         if (el) {
           el.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
@@ -373,7 +376,10 @@ export const AILegalBotPage: React.FC = () => {
                         <>
                           {/* Zero-Hallucination Warning if Insufficient Information */}
                           {!msg.ragResponse.sufficientInformationFound ? (
-                            <div className={`p-4 border rounded-xl text-sm space-y-2 ${
+                            <div
+                              id={`not-found-${msg.id}`}
+                              style={{ scrollMarginTop: '16px' }}
+                              className={`p-4 border rounded-xl text-sm space-y-2 ${
                               isDark ? 'bg-amber-500/10 border-amber-500/30 text-amber-200' : 'bg-amber-50 border-amber-200 text-amber-900'
                             }`}>
                               <div className="flex items-center gap-2 font-bold text-amber-600 dark:text-amber-400">
