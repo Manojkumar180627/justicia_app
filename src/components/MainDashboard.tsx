@@ -250,18 +250,7 @@ export const MainDashboard: React.FC<MainDashboardProps> = ({
 
         {/* Action strip with Skeleton Loading Trigger & Quick Search */}
         <div className="mt-4 flex flex-wrap items-center justify-center gap-3">
-          <button
-            id="dashboard-quick-search-btn"
-            onClick={onOpenSearch}
-            className={`inline-flex items-center gap-2 px-4 py-2 rounded-xl border text-xs font-medium shadow-xs hover:shadow-md transition-all duration-200 ${
-              isDark
-                ? 'bg-[#4A2F2B] border-[#775E57] text-[#F5F1E3] hover:border-[#C96F5D] hover:text-[#F8E7E2]'
-                : 'bg-[#FFFCF5] border-[#D8CEB6] text-[#302522] hover:border-[#A94F43] hover:text-[#38231F]'
-            }`}
-          >
-            <Search className="w-3.5 h-3.5 text-[#A94F43]" />
-            <span>{t.quickSearch}</span>
-          </button>
+
 
           <button
             id="dashboard-skeleton-toggle-btn"

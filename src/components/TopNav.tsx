@@ -262,17 +262,9 @@ export const TopNav: React.FC<TopNavProps> = ({
                 >
                   {t.topNav.searchPlaceholder}
                 </span>
-                <kbd
-                  className={`hidden md:inline-flex items-center px-1.5 py-0.5 text-[10px] font-mono rounded ${
-                    isDark
-                      ? 'text-[#E4D8C5] bg-[#38231F] border border-[#775E57]'
-                      : 'text-[#76665C] bg-[#E8E1C8] border border-[#D8CEB6]'
-                  }`}
-                >
-                  ⌘K
-                </kbd>
               </div>
             </div>
+
           </div>
 
           {/* Right Side: Quick Action + Notifications + User Profile */}
