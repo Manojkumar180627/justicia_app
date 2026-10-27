@@ -278,7 +278,7 @@ export const TopNav: React.FC<TopNavProps> = ({
                   ? 'bg-[#4A2F2B] border border-[#C96F5D]/40 text-[#F5F1E3] hover:border-[#C96F5D] hover:shadow-[0_0_12px_rgba(201,111,93,0.25)]'
                   : 'bg-[#F5F1E3] border border-[#A94F43]/40 text-[#A94F43] hover:bg-[#EDE3D1]'
               }`}
-              title="Ask Indian Legal AI Assistant"
+              title="Ask Indian Legal Assistant"
             >
               <Sparkles className="w-3.5 h-3.5 animate-pulse" />
               <span className="tracking-wide">{t.topNav.aiAssistant}</span>

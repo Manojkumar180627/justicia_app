@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
 import {
-  Bot,
   Send,
   Sparkles,
   BookOpen,
@@ -181,7 +180,7 @@ export const AILegalBotPage: React.FC = () => {
             <div className={`p-2.5 rounded-xl border ${
               isDark ? 'bg-[#F8E7E2] border-[#D8CEB6] text-[#A94F43]' : 'bg-[#F8E7E2] border-[#D8CEB6] text-[#A94F43]'
             }`}>
-              <Bot className="w-6 h-6" />
+              <Scale className="w-6 h-6" />
             </div>
             <div>
               <div className="flex items-center gap-2">
@@ -212,7 +211,6 @@ export const AILegalBotPage: React.FC = () => {
                   : 'text-[#76665C] hover:text-[#302522] hover:bg-[#E8E1C8]'
               }`}
             >
-              <Sparkles className="w-3.5 h-3.5" />
               <span>{t.aiBot.tabBot}</span>
             </button>
             <button

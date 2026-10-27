@@ -50,7 +50,7 @@ const TRANSLATIONS: Record<
   }
 > = {
   en: {
-    satyameva: 'सत्यमेव जयते',
+    satyameva: 'Truth Alone Triumphs',
     portalSubtitle: 'National Legal Knowledge & Information Repository',
     mainTitle: 'INDIAN LEGAL SYSTEM',
     mainSubtitle:
@@ -70,10 +70,10 @@ const TRANSLATIONS: Record<
     viewHierarchy: 'View Judicial Hierarchy',
     criminalReforms: 'Criminal Law Reforms (2024–26)',
     docketStatus: 'National Case Docket Status',
-    aiAssistant: 'Vidhi AI Research Bot',
+    aiAssistant: 'Vidhi Research Bot',
   },
   hi: {
-    satyameva: 'सत्यमेव जयते',
+    satyameva: 'Truth Alone Triumphs',
     portalSubtitle: 'राष्ट्रीय विधिक ज्ञान एवं सूचना भंडार',
     mainTitle: 'भारतीय विधिक प्रणाली',
     mainSubtitle:
@@ -93,7 +93,7 @@ const TRANSLATIONS: Record<
     viewHierarchy: 'न्यायिक पदानुक्रम देखें',
     criminalReforms: 'आपराधिक कानून सुधार (2024-26)',
     docketStatus: 'राष्ट्रीय केस वाद सूची स्थिति',
-    aiAssistant: 'विधि एआई रिसर्च बॉट',
+    aiAssistant: 'विधि रिसर्च बॉट',
   },
   ta: {
     satyameva: 'வாய்மையே வெல்லும்',
@@ -116,7 +116,7 @@ const TRANSLATIONS: Record<
     viewHierarchy: 'படிநிலையைப் பார்க்கவும்',
     criminalReforms: 'குற்றவியல் சட்ட சீர்திருத்தங்கள்',
     docketStatus: 'வழக்கு நிலை கண்காணிப்பு',
-    aiAssistant: 'விதி AI சட்ட உதவியாளர்',
+    aiAssistant: 'விதி சட்ட உதவியாளர்',
   },
   te: {
     satyameva: 'సత్యమేవ జయతే',
@@ -139,7 +139,7 @@ const TRANSLATIONS: Record<
     viewHierarchy: 'న్యాయవ్యవస్థను చూడండి',
     criminalReforms: 'క్రిమినల్ న్యాయ సంస్కరణలు',
     docketStatus: 'కేసు స్థితి పరిశీలన',
-    aiAssistant: 'విధి AI లీగల్ అసిస్టెంట్',
+    aiAssistant: 'విధి లీగల్ అసిస్టెంట్',
   },
 };
 

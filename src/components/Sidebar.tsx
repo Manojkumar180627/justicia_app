@@ -56,7 +56,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
       ]
     : [
         { key: 'dashboard', label: t.nav.dashboard, icon: LayoutDashboard, route: '/dashboard' },
-        { key: 'ai_bot', label: t.nav.ai_bot, icon: Bot, badge: 'AI', route: '/ai-legal-bot' },
+        { key: 'ai_bot', label: t.nav.ai_bot, icon: Bot, route: '/ai-legal-bot' },
         { key: 'bookmarks', label: t.nav.bookmarks, icon: Bookmark, route: '/bookmarks' },
         { key: 'settings', label: t.nav.settings, icon: Settings, route: '/settings' },
       ];

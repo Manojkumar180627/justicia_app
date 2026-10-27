@@ -253,7 +253,7 @@ export const translations: Record<SupportedLanguage, TranslationDictionary> = {
       laws: 'Laws & Statutes',
       case_tracker: 'Case Tracker',
       legal_search: 'Legal Search',
-      ai_bot: 'AI Legal Bot',
+      ai_bot: 'Legal Bot',
       bookmarks: 'Bookmarks',
       profile: 'Profile',
       settings: 'Settings',
@@ -262,7 +262,7 @@ export const translations: Record<SupportedLanguage, TranslationDictionary> = {
     },
     topNav: {
       searchPlaceholder: 'Search cases, statutes, articles...',
-      aiAssistant: 'AI Legal Assistant',
+      aiAssistant: 'Legal Assistant',
       notifications: 'Notifications',
       markAllRead: 'Mark all as read',
       noNotifications: 'No unread notifications',
@@ -273,7 +273,7 @@ export const translations: Record<SupportedLanguage, TranslationDictionary> = {
       signOut: 'Sign Out / Lock Portal',
     },
     dashboard: {
-      satyameva: 'सत्यमेव जयते',
+      satyameva: 'Truth Alone Triumphs',
       portalSubtitle: 'National Legal Knowledge & Information Repository',
       mainTitle: 'INDIAN LEGAL SYSTEM',
       mainSubtitle:
@@ -302,7 +302,7 @@ export const translations: Record<SupportedLanguage, TranslationDictionary> = {
       caseTrackerSub: 'Real-time CNR & Diary Lookup',
       caseTrackerDesc:
         'Track daily orders, interim stays, caveats, and next hearing dates across all High Courts.',
-      aiAssistantTitle: 'Vidhi AI Research Bot',
+      aiAssistantTitle: 'Vidhi Research Bot',
       aiAssistantSub: 'Automated Statutory Citations',
       aiAssistantDesc:
         'Formulate legal propositions, draft writ petitions grounds, and cite binding Supreme Court precedents.',
@@ -427,10 +427,10 @@ export const translations: Record<SupportedLanguage, TranslationDictionary> = {
       quickTip: 'Tip: You can search neutral citations like "2024 INSC 482" or "Article 19(1)(a)".',
     },
     aiBot: {
-      modalTitle: 'VIDHI AI LEGAL RESEARCH ASSISTANT',
+      modalTitle: 'VIDHI LEGAL RESEARCH ASSISTANT',
       modalSubtitle: 'Grounded Indian Jurisprudence, Bare Acts & Case Law Intelligence',
       welcomeMsg:
-        'Namaste Counsel. I am Vidhi AI, your RAG-powered Legal Research Assistant for Indian Law. All responses are strictly grounded in retrieved legal documents, verified statutory datasets, and approved web crawler sources.',
+        'Namaste Counsel. I am Vidhi, your RAG-powered Legal Research Assistant for Indian Law. All responses are strictly grounded in retrieved legal documents, verified statutory datasets, and approved web crawler sources.',
       inputPlaceholder: 'Ask a legal query (e.g. "What is Article 21?", "Punishment under BNS Section 103")...',
       sendButton: 'Search & RAG Generate',
       disclaimer:
@@ -440,7 +440,7 @@ export const translations: Record<SupportedLanguage, TranslationDictionary> = {
       suggestQ2: 'What is punishment under BNS Section 103?',
       suggestQ3: 'Procedure for anticipatory bail under BNSS Section 482 vs CrPC 438',
       generating: 'Searching legal dataset, reranking, and generating grounded response...',
-      tabBot: 'RAG AI Legal Assistant',
+      tabBot: 'RAG Legal Assistant',
       tabDataset: 'Legal Dataset Storage',
       tabCrawler: 'Legal Web Crawler Hub',
       tabInspector: 'RAG Execution Inspector',
@@ -508,7 +508,7 @@ export const translations: Record<SupportedLanguage, TranslationDictionary> = {
       laws: 'अधिनियम एवं विधियां',
       case_tracker: 'केस ट्रैकर',
       legal_search: 'विधिक खोज',
-      ai_bot: 'विधि एआई बॉट',
+      ai_bot: 'विधि बॉट',
       bookmarks: 'बुकमार्क',
       profile: 'प्रोफ़ाइल',
       settings: 'सेटिंग्स',
@@ -517,7 +517,7 @@ export const translations: Record<SupportedLanguage, TranslationDictionary> = {
     },
     topNav: {
       searchPlaceholder: 'केस, संविधि, अनुच्छेद खोजें...',
-      aiAssistant: 'एआई विधिक सहायक',
+      aiAssistant: 'विधिक सहायक',
       notifications: 'सूचनाएं',
       markAllRead: 'सभी को पढ़ा हुआ चिह्नित करें',
       noNotifications: 'कोई नई सूचना नहीं है',
@@ -528,7 +528,7 @@ export const translations: Record<SupportedLanguage, TranslationDictionary> = {
       signOut: 'साइन आउट / पोर्टल लॉक करें',
     },
     dashboard: {
-      satyameva: 'सत्यमेव जयते',
+      satyameva: 'Truth Alone Triumphs',
       portalSubtitle: 'राष्ट्रीय विधिक ज्ञान एवं सूचना भंडार',
       mainTitle: 'भारतीय विधिक प्रणाली',
       mainSubtitle:
@@ -557,7 +557,7 @@ export const translations: Record<SupportedLanguage, TranslationDictionary> = {
       caseTrackerSub: 'रीयल-टाइम सीएनआर एवं डायरी संख्या खोज',
       caseTrackerDesc:
         'दैनिक आदेश, अंतरिम स्थगन, कैविएट और अगली सुनवाई तिथियों को ट्रैक करें।',
-      aiAssistantTitle: 'विधि एआई रिसर्च बॉट',
+      aiAssistantTitle: 'विधि रिसर्च बॉट',
       aiAssistantSub: 'स्वचालित वैधानिक उद्धरण एवं प्रारूपण',
       aiAssistantDesc:
         'विधिक प्रस्ताव तैयार करें, याचिका के आधार बनाएं और सर्वोच्च न्यायालय के दृष्टांत उद्धृत करें।',
@@ -678,10 +678,10 @@ export const translations: Record<SupportedLanguage, TranslationDictionary> = {
       quickTip: 'सुझाव: आप "2024 INSC 482" या "अनुच्छेद 21" जैसे उद्धरण खोज सकते हैं।',
     },
     aiBot: {
-      modalTitle: 'विधि एआई विधिक अनुसंधान सहायक (RAG)',
+      modalTitle: 'विधि विधिक अनुसंधान सहायक (RAG)',
       modalSubtitle: 'भारतीय न्यायशास्त्र, मूल संविधियां और सत्यापित लीगल डेटासेट',
       welcomeMsg:
-        'नमस्ते। मैं विधि एआई हूं, आपका आरएजी (RAG) आधारित विधिक अनुसंधान सहायक। सभी उत्तर केवल सत्यापित विधिक दस्तावेजों, संविधियों और अनुमोदित वेब क्रॉलर से प्राप्त जानकारी पर आधारित हैं।',
+        'नमस्ते। मैं विधि हूं, आपका आरएजी (RAG) आधारित विधिक अनुसंधान सहायक। सभी उत्तर केवल सत्यापित विधिक दस्तावेजों, संविधियों और अनुमोदित वेब क्रॉलर से प्राप्त जानकारी पर आधारित हैं।',
       inputPlaceholder: 'कानूनी प्रश्न पूछें (उदा. "अनुच्छेद 21 क्या है?", "बीएनएस धारा 103 में क्या सजा है?")...',
       sendButton: 'खोज एवं RAG विश्लेषण',
       disclaimer: 'अस्वीकरण: RAG आउटपुट केवल सत्यापित विधिक डेटासेट और अनुमोदित सरकारी स्रोतों पर आधारित हैं।',
@@ -690,7 +690,7 @@ export const translations: Record<SupportedLanguage, TranslationDictionary> = {
       suggestQ2: 'बीएनएस धारा 103 के तहत क्या सजा है?',
       suggestQ3: 'बीएनएसएस धारा 482 के तहत अग्रिम जमानत की प्रक्रिया',
       generating: 'विधिक डेटासेट में खोज, रीरैंकिंग और RAG उत्तर जनरेट हो रहा है...',
-      tabBot: 'RAG एआई विधिक सहायक',
+      tabBot: 'RAG विधिक सहायक',
       tabDataset: 'विधिक डेटासेट भंडारण',
       tabCrawler: 'लीगल वेब क्रॉलर हब',
       tabInspector: 'RAG निष्पादन निरीक्षक',
@@ -757,7 +757,7 @@ export const translations: Record<SupportedLanguage, TranslationDictionary> = {
       laws: 'சட்டங்கள் & விதிகள்',
       case_tracker: 'வழக்கு கண்காணிப்பு',
       legal_search: 'சட்டத் தேடல்',
-      ai_bot: 'விதி AI சட்ட பாட்',
+      ai_bot: 'விதி சட்ட பாட்',
       bookmarks: 'புத்தகக்குறிகள்',
       profile: 'சுயவிவரம்',
       settings: 'அமைப்புகள்',
@@ -766,7 +766,7 @@ export const translations: Record<SupportedLanguage, TranslationDictionary> = {
     },
     topNav: {
       searchPlaceholder: 'வழக்குகள், சட்டங்கள், பிரிவுகளைத் தேடுங்கள்...',
-      aiAssistant: 'AI சட்ட உதவியாளர்',
+      aiAssistant: 'சட்ட உதவியாளர்',
       notifications: 'அறிவிப்புகள்',
       markAllRead: 'அனைத்தையும் படித்ததாகக் குறிக்கவும்',
       noNotifications: 'புதிய அறிவிப்புகள் இல்லை',
@@ -806,7 +806,7 @@ export const translations: Record<SupportedLanguage, TranslationDictionary> = {
       caseTrackerSub: 'நேரடி CNR & டைரி எண் தேடல்',
       caseTrackerDesc:
         'தினசரி உத்தரவுகள், இடைக்கால தடைகள் மற்றும் அடுத்த விசாரணை தேதிகளைக் கண்காணிக்கவும்.',
-      aiAssistantTitle: 'விதி AI சட்ட ஆராய்ச்சி பாட்',
+      aiAssistantTitle: 'விதி சட்ட ஆராய்ச்சி பாட்',
       aiAssistantSub: 'தானியங்கி சட்ட மேற்கோள்கள் & வரைவு',
       aiAssistantDesc:
         'சட்ட வாதங்களை உருவாக்கவும், மனுக்களைத் தயாரிக்கவும், உச்ச நீதிமன்ற தீர்ப்புகளை மேற்கோள் காட்டவும்.',
@@ -924,10 +924,10 @@ export const translations: Record<SupportedLanguage, TranslationDictionary> = {
       quickTip: 'குறிப்பு: "Article 21" அல்லது "Section 103" என தேடலாம்.',
     },
     aiBot: {
-      modalTitle: 'விதி AI சட்ட ஆராய்ச்சி உதவியாளர் (RAG)',
+      modalTitle: 'விதி சட்ட ஆராய்ச்சி உதவியாளர் (RAG)',
       modalSubtitle: 'இந்திய சட்டவியல், சன்ஹிதாக்கள் & சரிபார்க்கப்பட்ட சட்டத் தரவுத்தளம்',
       welcomeMsg:
-        'வணக்கம் வழக்கறிஞரே. நான் விதி AI, உங்களது RAG சட்ட ஆராய்ச்சி உதவியாளர். எனது பதில்கள் அனைத்தும் சரிபார்க்கப்பட்ட சட்ட ஆவணங்கள் மற்றும் அங்கீகரிக்கப்பட்ட வலைத் தேடல்களிலிருந்து பெறப்பட்டவை.',
+        'வணக்கம் வழக்கறிஞரே. நான் விதி, உங்களது RAG சட்ட ஆராய்ச்சி உதவியாளர். எனது பதில்கள் அனைத்தும் சரிபார்க்கப்பட்ட சட்ட ஆவணங்கள் மற்றும் அங்கீகரிக்கப்பட்ட வலைத் தேடல்களிலிருந்து பெறப்பட்டவை.',
       inputPlaceholder: 'சட்டக் கேள்வியைக் கேளுங்கள் (எ.கா. "Article 21 என்றால் என்ன?", "BNS Section 103 தண்டனை")...',
       sendButton: 'தேடு & RAG பதில் உருவாக்கு',
       disclaimer: 'பொறுப்புத் துறப்பு: RAG பதில்கள் சரிபார்க்கப்பட்ட சட்டத் தரவுத்தளத்திலிருந்து மட்டுமே உருவாக்கப்படுகின்றன.',
@@ -936,7 +936,7 @@ export const translations: Record<SupportedLanguage, TranslationDictionary> = {
       suggestQ2: 'BNS Section 103 இன் கீழ் தண்டனை என்ன?',
       suggestQ3: 'BNSS Section 482 இன் கீழ் முன்ஜாமீன் நடைமுறை',
       generating: 'சட்டத் தரவுத்தளத்தில் தேடி, RAG பதில் உருவாக்கப்படுகிறது...',
-      tabBot: 'RAG AI சட்ட உதவியாளர்',
+      tabBot: 'RAG சட்ட உதவியாளர்',
       tabDataset: 'சட்டத் தரவுத்தள சேமிப்பு',
       tabCrawler: 'சட்ட வலைத் தேடல் மையம்',
       tabInspector: 'RAG செயல்பாட்டுக் காட்டி',
@@ -1003,7 +1003,7 @@ export const translations: Record<SupportedLanguage, TranslationDictionary> = {
       laws: 'చట్టాలు & నిబంధనలు',
       case_tracker: 'కేస్ ట్రాకర్',
       legal_search: 'చట్టపరమైన శోధన',
-      ai_bot: 'విధి AI బాట్',
+      ai_bot: 'విధి బాట్',
       bookmarks: 'బుక్‌మార్క్‌లు',
       profile: 'ప్రొఫైల్',
       settings: 'సెట్టింగ్‌లు',
@@ -1012,7 +1012,7 @@ export const translations: Record<SupportedLanguage, TranslationDictionary> = {
     },
     topNav: {
       searchPlaceholder: 'కేసులు, చట్టాలు, సెక్షన్లను వెతకండి...',
-      aiAssistant: 'AI లీగల్ అసిస్టెంట్',
+      aiAssistant: 'లీగల్ అసిస్టెంట్',
       notifications: 'నోటిఫికేషన్లు',
       markAllRead: 'అన్నింటినీ చదివినట్లు గుర్తించు',
       noNotifications: 'కొత్త నోటిఫికేషన్లు లేవు',
@@ -1049,7 +1049,7 @@ export const translations: Record<SupportedLanguage, TranslationDictionary> = {
       caseTrackerTitle: 'జాతీయ కేసుల ట్రాకర్',
       caseTrackerSub: 'CNR సంఖ్య ద్వారా శోధన',
       caseTrackerDesc: 'రోజువారీ ఉత్తర్వులు మరియు తదుపరి విచారణ తేదీలను ట్రాక్ చేయండి.',
-      aiAssistantTitle: 'విధి AI పరిశోధన బాట్',
+      aiAssistantTitle: 'విధి పరిశోధన బాట్',
       aiAssistantSub: 'ఆటోమేటెడ్ న్యాయ సలహాలు',
       aiAssistantDesc: 'సుప్రీం కోర్టు మైలురాయి తీర్పులను పొందండి.',
     },
@@ -1166,10 +1166,10 @@ export const translations: Record<SupportedLanguage, TranslationDictionary> = {
       quickTip: 'సూచన: "Article 21" లేదా "Section 103" అని శోధించండి.',
     },
     aiBot: {
-      modalTitle: 'విధి AI చట్ట పరిశోధన అసిస్టెంట్ (RAG)',
+      modalTitle: 'విధి చట్ట పరిశోధన అసిస్టెంట్ (RAG)',
       modalSubtitle: 'భారతీయ చట్టాలు, సంహితలు & ధృవీకరించబడిన డేటాసెట్',
       welcomeMsg:
-        'నమస్కారం అడ్వకేట్ గారు. నేను విధి AI, మీ RAG లీగల్ రీసెర్చ్ అసిస్టెంట్. నా సమాధానాలన్నీ ధృవీకరించబడిన చట్టపరమైన పత్రాలు మరియు ఆమోదించబడిన వెబ్ సోర్సెస్ ఆధారంగా మాత్రమే ఇవ్వబడతాయి.',
+        'నమస్కారం అడ్వకేట్ గారు. నేను విధి, మీ RAG లీగల్ రీసెర్చ్ అసిస్టెంట్. నా సమాధానాలన్నీ ధృవీకరించబడిన చట్టపరమైన పత్రాలు మరియు ఆమోదించబడిన వెబ్ సోర్సెస్ ఆధారంగా మాత్రమే ఇవ్వబడతాయి.',
       inputPlaceholder: 'చట్టపరమైన ప్రశ్న అడగండి (ఉదా. "Article 21 అంటే ఏమిటి?", "BNS Section 103 కింద శిక్ష")...',
       sendButton: 'వెతుకు & RAG జవాబు పొందు',
       disclaimer: 'గమనిక: RAG జవాబులు ధృవీకరించబడిన చట్టపరమైన డేటాసెట్ మరియు ప్రభుత్వం ఆమోదించిన సోర్సెస్ నుండి మాత్రమే జారీ చేయబడతాయి.',
@@ -1178,7 +1178,7 @@ export const translations: Record<SupportedLanguage, TranslationDictionary> = {
       suggestQ2: 'BNS Section 103 కింద శిక్ష ఏమిటి?',
       suggestQ3: 'BNSS Section 482 కింద ముందస్తు బెయిల్ ప్రక్రియ',
       generating: 'డేటాసెట్‌లో శోధిస్తూ, RAG జవాబు తయారు చేయబడుతోంది...',
-      tabBot: 'RAG AI లీగల్ అసిస్టెంట్',
+      tabBot: 'RAG లీగల్ అసిస్టెంట్',
       tabDataset: 'చట్టపరమైన డేటాసెట్ స్టోరేజ్',
       tabCrawler: 'లీగల్ వెబ్ క్రాలర్ హబ్',
       tabInspector: 'RAG ఎగ్జిక్యూషన్ ఇన్‌స్పెక్టర్',
