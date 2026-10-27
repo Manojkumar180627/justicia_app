@@ -82,9 +82,7 @@ export const AILegalBotPage: React.FC = () => {
     ]);
   }, [language]);
 
-  useEffect(() => {
-    messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
-  }, [messages, isGenerating]);
+  // Auto-scroll removed: users scroll manually to view results
 
   const refreshDataset = () => {
     const docs = legalDatasetStore.getAllDocuments();
@@ -331,7 +329,7 @@ export const AILegalBotPage: React.FC = () => {
                             <h3 className={`text-sm font-bold flex items-center gap-2 ${
                               isDark ? 'text-white' : 'text-slate-900'
                             }`}>
-                              VIDHI AI RAG RESEARCH OUTPUT
+                              RAG RESEARCH OUTPUT
                               {msg.ragResponse?.isFallbackUsed && (
                                 <span className={`px-2 py-0.5 border rounded text-[10px] font-semibold flex items-center gap-1 ${
                                   isDark ? 'bg-sky-500/10 border-sky-500/30 text-sky-400' : 'bg-sky-50 border-sky-200 text-sky-700'
