@@ -319,10 +319,10 @@ export const MainDashboard: React.FC<MainDashboardProps> = ({
       ) : (
         <div
           id="legal-system-cards-container"
-          className={`w-full flex flex-col items-center select-none ${isCompact ? 'gap-4 md:gap-6' : 'gap-6 md:gap-8'}`}
+          className={`w-full max-w-4xl mx-auto flex flex-col items-center select-none ${isCompact ? 'gap-4 md:gap-6' : 'gap-6 md:gap-8'}`}
         >
           {/* Row 1: Two cards [ Constitution of India ] & [ Laws of India ] */}
-          <div className={`flex flex-col md:flex-row items-stretch justify-center w-full ${isCompact ? 'gap-4 md:gap-6' : 'gap-6 md:gap-8'}`}>
+          <div className={`flex flex-col sm:flex-row items-stretch justify-center w-full ${isCompact ? 'gap-4 sm:gap-6' : 'gap-6 sm:gap-8'}`}>
             {cards.slice(0, 2).map((card) => (
               <div
                 key={card.id}
@@ -336,7 +336,7 @@ export const MainDashboard: React.FC<MainDashboardProps> = ({
                     handleCardClick(card.id as any);
                   }
                 }}
-                className={`group relative w-full max-w-[340px] md:w-[360px] lg:w-[380px] rounded-[24px] flex flex-col items-center justify-center text-center cursor-pointer border transition-all duration-300 ease-out hover:-translate-y-2 mx-auto ${
+                className={`group relative w-full sm:flex-1 max-w-[380px] rounded-[24px] flex flex-col items-center justify-center text-center cursor-pointer border transition-all duration-300 ease-out hover:-translate-y-2 mx-auto sm:mx-0 ${
                   isCompact ? 'min-h-[170px] md:h-[190px] p-5' : 'min-h-[200px] md:h-[220px] p-6'
                 } ${
                   isDark
@@ -403,7 +403,7 @@ export const MainDashboard: React.FC<MainDashboardProps> = ({
                     handleCardClick(card.id as any);
                   }
                 }}
-                className={`group relative w-full max-w-[340px] md:w-[360px] lg:w-[380px] rounded-[24px] flex flex-col items-center justify-center text-center cursor-pointer border transition-all duration-300 ease-out hover:-translate-y-2 mx-auto ${
+                className={`group relative w-full max-w-[380px] rounded-[24px] flex flex-col items-center justify-center text-center cursor-pointer border transition-all duration-300 ease-out hover:-translate-y-2 ${
                   isCompact ? 'min-h-[170px] md:h-[190px] p-5' : 'min-h-[200px] md:h-[220px] p-6'
                 } ${
                   isDark
@@ -460,7 +460,7 @@ export const MainDashboard: React.FC<MainDashboardProps> = ({
       {/* Additional Quick Legal Modules / Bottom Functional Tray */}
       <div
         id="dashboard-bottom-quick-bar"
-        className={`w-full max-w-6xl border-t grid grid-cols-1 md:grid-cols-3 gap-4 text-left ${
+        className={`w-full max-w-4xl mx-auto border-t grid grid-cols-1 md:grid-cols-2 gap-6 text-left ${
           isCompact ? 'mt-8 pt-5' : 'mt-12 pt-8'
         } ${isDark ? 'border-[#775E57]' : 'border-[#D8CEB6]'}`}
       >
@@ -482,30 +482,6 @@ export const MainDashboard: React.FC<MainDashboardProps> = ({
           </h3>
           <p className={`text-xs mt-1 line-clamp-2 ${isDark ? 'text-[#E4D8C5]' : 'text-[#76665C]'}`}>
             Section-by-section comparison index between IPC 1860, CrPC 1973, and newly enacted Sanhitas.
-          </p>
-        </div>
-
-        <div
-          id="quick-module-case-tracker"
-          onClick={() => {
-            if (onOpenCaseTracker) onOpenCaseTracker();
-            else onOpenSearch();
-          }}
-          className={`p-4 rounded-2xl border transition-all cursor-pointer group ${
-            isDark
-              ? 'bg-[#513C37] border-[#775E57] hover:border-[#C96F5D]/60 hover:shadow-lg'
-              : 'bg-[#FFFCF5] border-[#D8CEB6] hover:border-[#A94F43]/60 hover:shadow-md'
-          }`}
-        >
-          <div className="flex items-center gap-2 text-xs font-semibold text-emerald-500">
-            <FileCheck2 className="w-4 h-4 text-emerald-500" />
-            <span>{t.docketStatus}</span>
-          </div>
-          <h3 className={`text-sm font-semibold mt-1 ${isDark ? 'text-[#F5F1E3] group-hover:text-[#FFFFFF]' : 'text-[#302522] group-hover:text-[#38231F]'}`}>
-            Real-time CNR & Diary Lookup
-          </h3>
-          <p className={`text-xs mt-1 line-clamp-2 ${isDark ? 'text-[#E4D8C5]' : 'text-[#76665C]'}`}>
-            Track daily orders, interim stays, caveats, and next hearing dates across all High Courts.
           </p>
         </div>
 

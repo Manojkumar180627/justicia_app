@@ -292,29 +292,6 @@ export const TopNav: React.FC<TopNavProps> = ({
               <span className="tracking-wide">{t.topNav.aiAssistant}</span>
             </button>
 
-            {/* Notification Bell with Badge */}
-            <div className="relative" ref={notifRef}>
-              <button
-                ref={notifButtonRef}
-                id="topnav-notifications-btn"
-                onClick={() => setNotifPanelOpen((prev) => !prev)}
-                className={`relative p-2 rounded-xl active:scale-95 transition-all duration-200 ${
-                  isDark
-                    ? 'text-[#E4D8C5] hover:text-[#F5F1E3] hover:bg-[#5B4742]'
-                    : 'text-[#76665C] hover:text-[#302522] hover:bg-[#EDE3D1]'
-                }`}
-                aria-label={t.topNav.notifications}
-                aria-expanded={notifPanelOpen}
-              >
-                <Bell className="w-5 h-5" />
-                {unreadCount > 0 && (
-                  <span
-                    id="topnav-notification-indicator"
-                    className="absolute top-1.5 right-1.5 w-2.5 h-2.5 bg-[#A94F43] rounded-full ring-2 ring-[#38231F] animate-pulse"
-                  />
-                )}
-              </button>
-            </div>
 
             {/* Portal Settings Direct Action Button */}
             <button
