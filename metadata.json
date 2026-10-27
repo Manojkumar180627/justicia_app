@@ -1,0 +1,6 @@
+{
+  "name": "Justicia Law Portal",
+  "description": "Modern, professional Indian Legal Information System dashboard UI with interactive Constitution, Statutes, and Court System explorers.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

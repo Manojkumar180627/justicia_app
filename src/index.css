@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+:root {
+  --judicial-bg: #F5F1E3;
+  --judicial-bg-alt: #E8E1C8;
+  --judicial-card: #FFFCF5;
+  --judicial-primary: #A94F43;
+  --judicial-secondary: #C96F5D;
+  --judicial-dark: #38231F;
+  --judicial-text: #302522;
+  --judicial-text-soft: #76665C;
+  --judicial-border: #D8CEB6;
+  --judicial-hover: #EDE3D1;
+}
+
+@layer base {
+  html {
+    background: var(--judicial-bg);
+    color: var(--judicial-text);
+  }
+
+  body {
+    margin: 0;
+    background: var(--judicial-bg);
+    color: var(--judicial-text);
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  }
+
+  h1, h2, h3, .font-serif-legal {
+    font-family: 'Playfair Display', Georgia, Cambria, 'Times New Roman', Times, serif;
+    color: var(--judicial-dark);
+  }
+
+  p, span, div, label, input, textarea, button {
+    color: inherit;
+  }
+}
+
+.font-playfair {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+.font-inter {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Custom scrollbar for legal texts */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(216, 206, 182, 0.35);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(169, 79, 67, 0.55);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(122, 62, 56, 0.8);
+}
+

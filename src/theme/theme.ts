@@ -1,0 +1,33 @@
+export const JUDICIAL_THEME = {
+  background: '#F5F1E3',
+  secondaryBackground: '#E8E1C8',
+  cardBackground: '#FFFCF5',
+  primary: '#A94F43',
+  secondary: '#C96F5D',
+  darkAccent: '#38231F',
+  textPrimary: '#302522',
+  textSecondary: '#76665C',
+  border: '#D8CEB6',
+  hoverBackground: '#EDE3D1',
+  primaryButton: '#A94F43',
+  primaryButtonHover: '#873B32',
+  activeNav: '#A94F43',
+  activeNavText: '#FFFFFF',
+} as const;
+
+export const JUDICIAL_THEME_DARK = {
+  background: '#38231F',
+  secondaryBackground: '#4A2F2B',
+  cardBackground: '#513C37',
+  primary: '#C96F5D',
+  secondary: '#D48D7A',
+  darkAccent: '#F5F1E3',
+  textPrimary: '#F5F1E3',
+  textSecondary: '#E4D8C5',
+  border: '#775E57',
+  hoverBackground: '#5B4742',
+  primaryButton: '#C96F5D',
+  primaryButtonHover: '#A94F43',
+  activeNav: '#C96F5D',
+  activeNavText: '#38231F',
+} as const;
