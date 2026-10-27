@@ -51,6 +51,7 @@ export const AILegalBotPage: React.FC = () => {
   const [isGenerating, setIsGenerating] = useState(false);
   const [activeTraceResponse, setActiveTraceResponse] = useState<RAGResponse | null>(null);
   const messagesEndRef = useRef<HTMLDivElement>(null);
+  const lastBotMsgIdRef = useRef<string | null>(null);
 
   // Dataset Browser State
   const [datasetDocs, setDatasetDocs] = useState<LegalDocument[]>([]);
@@ -82,7 +83,25 @@ export const AILegalBotPage: React.FC = () => {
     ]);
   }, [language]);
 
-  // Auto-scroll removed: users scroll manually to view results
+  // Scroll to the LEGAL TOPIC card of the latest bot response
+  useEffect(() => {
+    if (messages.length === 0) return;
+    const lastMsg = messages[messages.length - 1];
+    if (lastMsg.sender !== 'bot' || !lastMsg.ragResponse) return;
+    // Only scroll once per new bot message
+    if (lastBotMsgIdRef.current === lastMsg.id) return;
+    lastBotMsgIdRef.current = lastMsg.id;
+
+    // Wait for DOM to render the new message
+    requestAnimationFrame(() => {
+      setTimeout(() => {
+        const el = document.getElementById(`legal-topic-${lastMsg.id}`);
+        if (el) {
+          el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      }, 100);
+    });
+  }, [messages]);
 
   const refreshDataset = () => {
     const docs = legalDatasetStore.getAllDocuments();
@@ -367,7 +386,10 @@ export const AILegalBotPage: React.FC = () => {
                             <div className="space-y-4">
                               {/* 1. LEGAL TOPIC & DIRECT ANSWER HEADER */}
                               {msg.ragResponse.legalTopic && (
-                                <div className={`border rounded-xl p-3.5 flex flex-col gap-1 ${
+                                <div
+                                  id={`legal-topic-${msg.id}`}
+                                  style={{ scrollMarginTop: '16px' }}
+                                  className={`border rounded-xl p-3.5 flex flex-col gap-1 ${
                                   isDark ? 'bg-amber-500/10 border-amber-500/30' : 'bg-amber-50/80 border-amber-200'
                                 }`}>
                                   <div className={`text-[11px] uppercase tracking-wider font-bold ${
